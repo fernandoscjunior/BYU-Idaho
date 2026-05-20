@@ -1,0 +1,17 @@
+@media (max-width: 40em) {
+    header {
+        display: flex;
+        flex-flow: column;
+    }
+
+    main {
+        display: flex;
+        flex-flow: column;
+    }
+
+    .draggable-container {
+        display: flex;
+        flex-flow: column;
+    }
+
+}

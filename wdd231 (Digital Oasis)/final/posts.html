@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Posts of the Digital Oasis website">
+    <meta name="author" content="Fernando S. Costa Jr">
+    <meta property="og:title" content="Digital Oasis Posts">
+    <meta property="og:description" content="This page shows posts that inform and give advices about how to have a digital eco-friendly life style">
+    <meta property="og:url" content="https://fernandoscjunior.github.io/wdd231/final/posts.html">
+    <meta property="og:image" content="https://fernandoscjunior.github.io/wdd231/final/images/oasis-logo.png" />
+    <title>Digital Oasis - Posts</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/theme.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script defer src="scripts/navigation.js"></script>
+    <script defer src="scripts/posts.js""></script>
+    <script defer src="scripts/dialog.js"></script>
+    <script defer src="scripts/switch-themes.js" type="module"></script>
+</head>
+<body>
+    <header>
+        <img src="images/oasis-logo.webp" alt="Digital Oasis logo" loading="lazy">
+        <span>Digital Oasis</span>
+        <button id="toggle-theme" class="toggle-theme"><img id="theme-button" src="images/light-mode.svg" alt="light mode"></button>
+        <button id="ham-btn" class="hamburger" title="hamburger menu"></button>
+    </header>
+
+    <nav id="nav-bar" class="navigation">
+        <ul id="list-nav">
+            <li><a href="index.html" data-page="index">Home</a></li>
+            <li><a href="posts.html" data-page="posts">Posts</a></li>
+            <li><a href="newsletter.html" data-page="newsletter">Newsletter</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <section>
+            <div id="cards" class="cards"> 
+                <!--- Here is where content is dynamically included with Javascript --->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social">
+            <a href="https://www.linkedin.com/in/fernando-costa-jr-3a263a33a/" target="_blank"><img src="images/linkedin.svg" alt="linkedin logo" width="16" height="16" loading="lazy"></a>
+            <a href=https://github.com/fernandoscjunior target="_blank"><img src="images/github.svg" alt="github logo" width="16" height="16" loading="lazy"></a>
+        </div>
+        <p>© Fernando S. Costa Jr 2025</p>
+        <a href="#" data-dialog="redirection" >Attribuitions</a>
+        <a href="https://youtu.be/2rQ2yqazsXo">  |  Video for graders</a>
+        <dialog id="redirection">
+            <p>Do you want to go to the Attribuitions Page?</p>
+            <button class="close-button">Go back</button>
+            <button id="continue-button">Continue</button>
+        </dialog>
+    </footer>
+</body>
+</html>

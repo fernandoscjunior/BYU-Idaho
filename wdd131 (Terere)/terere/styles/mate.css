@@ -1,0 +1,242 @@
+:root {
+    --primary-color: #596869;
+    --secondary-color:  #6C8976;
+    --sub-color: #79B791;
+    --border-color: #ABD1B5;
+    --extra-color: #FFFFFF;
+    --small-text: #E6EFE6;
+    --big-font : "Roboto";
+    --small-font : 'Times New Roman', Times, serif;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--secondary-color);
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+header img {
+    width: 120px;
+    height: auto;
+}
+
+header nav {
+    display: flex;
+    justify-content:space-between;
+    margin: 10px;
+    padding: 10px;
+}
+
+header nav a:hover {
+    background-color: var(--border-color);
+    color: var(--secondary-color);
+    transform: scale(1.10);
+}
+
+.nav a{
+    color: var(--extra-color);
+    text-decoration: none;
+    font-family: var(--big-font);
+    margin: 5px;
+    padding: 7px;
+    border: var(--border-color) solid;
+    border-radius: 10px;
+    align-self: center;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.titleDiv {
+    grid-column: 1/4;
+    text-align: center;
+    border-radius: 10px;
+    background-color: var(--border-color);
+}
+
+.card-one {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.card-one h1 {
+    font-family: var(--big-font);
+    color: var(--extra-color);
+    padding: 10px;
+    margin: 10px;
+}
+
+.card-one h2 {
+    font-family: var(--big-font);
+    color: var(--secondary-color);
+    padding: 10px;
+    margin: 10px;
+}
+
+.card-one p {
+    grid-column: 1/4;
+    margin: 10px;
+    padding: 5px;
+    font-size: larger;
+    font-family: var(--small-font);
+    color: #596869;
+    word-spacing: 0.5px;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.buttonDiv {
+    grid-column: 3/4;
+    text-align: center;
+    border-radius: 10px;
+    align-content: end;
+}
+
+.card-one button {
+    background-color: var(--border-color);
+    color: var(--extra-color);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    border: solid thin var(--sub-color);
+    width: 225px;
+    cursor: pointer;
+    transition: background-color 0.5s ease, transform 0.3s ease;
+    margin-bottom: 50px;
+}
+
+.card-one button:hover{
+    transform: scale(1.05);
+}
+
+.card-two img {
+    width: 390px;
+    height: 390px;
+    margin: 10px;
+    border-radius: 15px;
+    padding: 3px;
+    border: 2px solid var(--small-text);
+}
+
+footer {
+    background-image: linear-gradient(to right, var(--border-color), var(--primary-color));
+    text-align: center;
+    padding: 20px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin-top: 65px;
+	position: sticky;
+    bottom: 0;
+}
+
+footer a {
+    color: var(--extra-color);
+}
+
+footer p {
+    color: var(--extra-color);
+    margin: 5px;
+    font-family: var(--small-font);
+}
+
+/*History page CSS*/
+.history-main {
+    display: grid;
+    flex-flow: column;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+.history-main h1 {
+    font-family: var(--big-font);
+    color: var(--primary-color);
+    padding: 10px;
+    margin: 10px;
+}
+
+.history-main p {
+    margin: 10px;
+    padding: 5px;
+    font-size: larger;
+    font-family: var(--small-font);
+    color: var(--primary-color);
+}
+
+.history-main img {
+    width: 600px;
+    height: auto;
+    margin: 10px;
+    border-radius: 15px;
+    padding: 3px;
+    border: 2px solid var(--small-text);
+}
+
+/* Make Terere Page*/
+
+.make main {
+    display: flex;
+    flex-flow: column;
+}
+
+/* Form CSS*/
+
+.form {
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    background-color: var(--extra-color);
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.form h1 {
+    font-family: var(--big-font);
+    color: var(--extra-color);
+    padding: 10px;
+    margin: 10px;
+    background-color: var(--sub-color);
+    border-radius: 10px;
+    text-align: center;
+}
+
+input, select, textarea {
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+input[type="submit"] {
+    border-radius: 10px;
+    font-weight: bold;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.form button {
+    background-color: var(--border-color);
+    color: var(--extra-color);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    border: solid thin var(--sub-color);
+    cursor: pointer;
+}

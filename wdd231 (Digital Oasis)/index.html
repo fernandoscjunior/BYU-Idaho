@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Main page for the first webpage on WDD231">
+    <meta name="author" content="Fernando S. Costa Jr">
+    <meta property="og:title" content="Chamber Commerce">
+    <meta property="og:description" content="Main page for the first webpage on WDD231">
+    <meta property="og:url" content="https://fernandoscjunior.github.io/wdd231/">
+    <meta property="og:image" content="https://fernandoscjunior.github.io/wdd231/images/house-blank.svg" />
+    <title>Main Page</title>
+    <link rel="icon" href="chamber/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/getdate.js" defer></script>
+    <script src="scripts/courses.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="images/house-blank.svg" alt="Home logo" width="512" height="512">
+        <span>Fernando's site</span>
+        <button id="ham-btn" class="hamburger"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="current"><a href="">Home</a></li>
+            <li><a href="chamber/index.html">Chamber Project</a></li>
+            <li><a href="final/index.html">Final Project</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Home</h1>
+            <div class="sections">
+                <section class="main-card">
+                    <div class="main-txt">
+                        <h2>About me</h1>
+                    </div>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem, fugit culpa iusto qui exercitationem quisquam laudantium fugiat cumque explicabo a itaque inventore aspernatur recusandae cupiditate ex obcaecati aliquid dolorem soluta.</p>
+                </section>
+            
+                <section class="img-card">
+                    <div class="main-txt">
+                        <h2>Student Photo</h1>
+                    </div>
+                    <div class="img-div">
+                        <img src="images/myself.jpeg" alt="a photo of myself">
+                    </div>
+                </section>
+            </div>
+
+        <section class="web-card">
+            <div class="main-txt">
+                <h2>Web Certificate Courses</h1>
+            </div>
+            <div class="courses">
+                <button id="all">All</button>
+                <button id="cse">CSE</button>
+                <button id="wdd">WDD</button>
+            </div>
+                <p id="credits">Course credits:</p>
+
+            <div id="card-container" class="container">
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="social">
+            <a href="https://www.linkedin.com/in/fernando-costa-jr-3a263a33a/" target="_blank"><img src="images/linkedin.svg" alt="linkedin logo" width="16" height="16"></a>
+            <a href=https://github.com/fernandoscjunior target="_blank"><img src="images/github.svg" alt="github logo" width="16" height="16"></a>
+            <a href="" target="_blank"><img src="images/youtube.svg" alt="youtube logo" width="16" height="16"></a>
+            <a href="" target="_blank"><img src="images/whatsapp.svg" alt="whatsapp logo" width="16" height="16"></a>
+        </div>
+        <p>©️ <span id="currentyear"></span> Fernando S. Costa Jr - Brazil</p> 
+        <p id="lastmodified"><span id="lastModified"></span></p>
+    </footer>
+    <dialog id="course-details"></dialog>
+</body>
+</html>

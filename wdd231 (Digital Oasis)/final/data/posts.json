@@ -1,0 +1,109 @@
+{
+  "posts": [
+    {
+      "title": "The Google That Plants Trees",
+      "image": "images/ecosia.webp",
+      "content": "Ecosia is a search engine that uses its ad revenue to plant trees around the world. Every search contributes to reforestation efforts, making your digital queries a force for good. It has already planted over 180 million trees.",
+      "author": "Fernando S. Costa Jr",
+      "date": "2025-08-09 18:29"
+    },
+    {
+      "title": "Apps That Rescue Food",
+      "image": "images/food-rescue.webp",
+      "content": "Apps like Too Good To Go and OLIO connect users with surplus food from restaurants and neighbors. Instead of letting good food go to waste, you can save money and reduce your carbon footprint by rescuing meals with a few taps.",
+      "author": "Fernando S. Costa Jr",
+      "date": "2025-08-09 18:32"
+    },
+    {
+      "title": "Unplugging the Vampire Devices",
+      "image": "images/unplug.webp",
+      "content": "Devices in standby mode still consume energy. Smart plugs and timers help cut off power when not in use. Turning off your router overnight or unplugging chargers can save energy and reduce your digital carbon footprint.",
+      "author": "Fernando S. Costa Jr",
+      "date": "2025-08-09 18:35"
+    },
+    {
+      "title": "Declutter Your Inbox, Save the Planet",
+      "image": "images/declutter-email.webp",
+      "content": "Every email stored on servers consumes energy. Unsubscribing from newsletters you never read and deleting old emails helps reduce data center load. Use tools like Cleanfox to automate the cleanup.",
+      "author": "Fernando S. Costa Jr",
+      "date": "2025-08-09 18:37"
+    },
+    {
+      "title": "Green Hosting for Your Website",
+      "image": "images/kualo.webp",
+      "content": "Hosting providers like GreenGeeks and Kualo use renewable energy to power their servers. If you run a blog or business site, switching to eco-friendly hosting can make your digital presence more sustainable.",
+      "author": "Fernando S. Costa Jr",
+      "date": "2025-08-09 18:40"
+    },
+    {
+      "title": "Optimize Your Battery Life",
+      "image": "images/battery.webp",
+      "content": "Reducing screen brightness, disabling background apps, and using battery saver modes not only extend device life but also reduce energy consumption. Fewer charges mean less strain on the grid.",
+      "author": "Fernando S. Costa Jr",
+      "date": "2025-08-09 18:45"
+    },
+    {
+      "title": "Stream Smarter",
+      "image": "images/cnet.webp",
+      "content": "Streaming in HD consumes more data and energy. If you're watching on a small screen, consider lowering the resolution. Downloading content instead of streaming repeatedly also helps reduce server load.",
+      "author": "Fernando S. Costa Jr",
+      "date": "2025-08-09 18:50"
+    },
+    {
+      "title": "Recycle Your Old Tech",
+      "image": "images/recycling.webp",
+      "content": "E-waste is a growing problem. Donate, sell, or recycle old devices through certified programs. Many manufacturers offer take-back schemes, and local recycling centers often accept electronics.",
+      "author": "Fernando S. Costa Jr",
+      "date": "2025-08-09 18:53"
+    },
+    {
+      "title": "Use Eco-Friendly Browsers",
+      "image": "images/brave-logo.webp",
+      "content": "Browsers like Brave reduce data usage by blocking ads and trackers. Less data means less energy used by servers. Combine it with Ecosia for a double win.",
+      "author": "Fernando S. Costa Jr",
+      "date": "2025-08-09 18:57"
+    },
+    {
+      "title": "Digital Mindfulness",
+      "image": "images/mindfulness.webp",
+      "content": "Being intentional with screen time reduces unnecessary energy use. Set limits, use focus apps, and unplug when possible. A mindful digital life is a greener one.",
+      "author": "Fernando S. Costa Jr",
+      "date": "2025-08-09 19:00"
+    },
+    {
+      "title": "Smart Home, Smart Planet",
+      "image": "images/smart-home.webp",
+      "content": "Smart thermostats, lights, and appliances can optimize energy use. Automating your home to reduce waste—like turning off lights when rooms are empty—makes your digital lifestyle more eco-friendly.",
+      "author": "Fernando S. Costa Jr",
+      "date": "2025-08-09 19:05"
+    },
+    {
+      "title": "Choose Greener Devices",
+      "image": "images/green-device.webp",
+      "content": "When buying new tech, look for energy-efficient certifications like ENERGY STAR. Brands like Fairphone focus on sustainability and repairability, reducing the environmental impact of your gadgets.",
+      "author": "Fernando S. Costa Jr",
+      "date": "2025-08-09 19:08"
+    },
+    {
+      "title": "Go Paperless, But Wisely",
+      "image": "images/paperless.webp",
+      "content": "Digital documents save trees, but storing thousands of files in the cloud uses energy. Archive only what’s necessary and use local storage when possible to reduce server demand.",
+      "author": "Fernando S. Costa Jr",
+      "date": "2025-08-09 19:11"
+    },
+    {
+      "title": "Update, Don’t Replace",
+      "image": "images/update.webp",
+      "content": "Software updates can improve performance and security, extending the life of your devices. Instead of upgrading hardware, try refreshing your system to keep it running efficiently.",
+      "author": "Fernando S. Costa Jr",
+      "date": "2025-08-09 19:15"
+    },
+    {
+      "title": "Support Digital Sustainability Projects",
+      "image": "images/last-one.webp",
+      "content": "Platforms like Open Climate and Earth Hero promote digital tools for climate action. Supporting or contributing to these projects helps build a greener internet for everyone.",
+      "author": "Fernando S. Costa Jr",
+      "date": "2025-08-09 19:19"
+    }
+  ]
+}

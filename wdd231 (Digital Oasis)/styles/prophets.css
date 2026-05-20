@@ -1,0 +1,55 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+header {
+    text-align: center;
+}
+
+header h1 {
+    margin-left: 10px;
+    font-family:cursive;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 10px; 
+}
+
+.cards section {
+    background-color: rgb(5, 5, 133);
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px;
+    text-align: center;
+    
+}
+
+.cards section h2 {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: whitesmoke;
+    
+}
+
+.cards section p {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: whitesmoke;
+    
+}
+
+.cards section img {
+    border-radius: 10px;
+    padding-top: 5px;
+}
+
+footer {
+   background-color: rgb(5, 5, 130);
+   padding: 1rem 10px;
+   text-align: center;
+}
+
+footer p {
+    color: whitesmoke;
+}

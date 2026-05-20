@@ -1,0 +1,165 @@
+:root {
+    --primary-color:#FFFFFF;
+    --secondary-color:#CE3B4F;
+    --accent1-color:#30638E;
+    --accent2-color:#000E14;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+body {
+    font-family: Merriweather, Georgia, serif;
+    font-size: 1.2em;
+    color: #333;
+    background: var(--primary-color);
+  }
+
+header {
+    display: grid;
+    grid-template-columns: 120px auto;
+}
+
+header img {
+    width: 125px;
+    height: auto;
+    padding: 10px;
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: var(--accent1-color);
+    color: var(--primary-color);
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    margin-right: 20px;
+  }
+  
+  nav a {
+    color: var(--primary-color);
+    text-decoration: none;
+  }
+
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+
+.employees {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  background-color: var(--accent1-color);
+  color: var(--primary-color);
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+
+form {
+  width: 650px;
+  margin: 0 auto;
+  padding: 1rem;
+  border: 1px solid var(--accent2-color);
+  border-radius: 0.5rem;
+  background-color: var(--primary-color);
+  display: grid;
+  margin-bottom: 10px;
+}
+
+fieldset {
+  display: grid;
+  grid-gap: .5rem;
+  margin: 1rem;
+  border: 1px solid var(--accent2-color);
+  padding: 1rem;
+}
+
+legend {
+  padding: 0.5rem;
+  color: var(--accent1-color);
+  font-size: 1.3em;
+}
+
+label, input, button, select, textarea {
+  font-family: Roboto, Arial, sans-serif;
+}
+
+label {
+  text-align: right;
+  padding-right: 1rem;
+}
+
+input, select, textarea {
+  padding: 0.5rem;
+  font-size: 1.1rem;
+}
+
+input[type="checkbox"] {
+  width: 22px;
+  height: 22px;
+  vertical-align: bottom;
+}
+
+button {
+  margin: 1rem;
+  background-color: var(--accent1-color);
+  color: var(--primary-color);
+  border: none;
+  border-radius: .5rem;
+  padding: .75rem;
+  font-size: 1.2rem;
+}
+
+button:hover {
+  background-color: var(--accent1-color);
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    justify-content: space-between;
+    background-color: var(--accent1-color);
+    color: var(--primary-color);
+}
+
+footer p {
+    text-align: center;
+    flex-grow: 1;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+footer div {
+    display: flex;
+    gap: 10px;
+}
+
+footer img {
+    width: 25px;
+    height: auto;
+}
+
+iframe {
+  width: 200px;
+  height: auto;
+}

@@ -1,0 +1,85 @@
+:root {
+    --primary-color: #00602B;
+    --secondary-color: #BB161D;
+    --border-color: #DCDDDF;
+    --font : Roboto, sans-serif;
+}
+
+body {
+    font-family: var(--font);
+    margin: 0;
+    padding: 0;
+    color: aliceblue;
+}
+
+header {
+    background-color: var(--secondary-color);
+    padding: 10px;
+    text-align: center;
+    font-size: 24px;
+    border-bottom: 1px var(--border-color) solid;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+   
+}
+
+.main-content {
+    position: relative;
+    width: 100%;
+    height: 750px;
+}
+
+.main-content picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.place-info {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: var(--primary-color);
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    text-align: center;
+}
+
+.weather-info {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background: var(--primary-color);
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    text-align: center;
+}
+
+.weather-info h1::after {
+    content: "🌤️";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-left: 10px;
+}
+
+.weather-icon {
+    opacity: 0%;
+    width: 1px;
+    height: 1px;
+}
+
+footer {
+    background-color: var(--secondary-color);
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    border-top: 1px solid var(--border-color);
+}

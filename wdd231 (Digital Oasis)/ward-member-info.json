@@ -1,0 +1,30 @@
+{
+    "family": {
+        "familyName":"Costa",
+        "firstDayDate":"2023-06-16",
+        "peopleInFamily": 4,
+        "visitedBishopric": false,
+        "familyMembers" : [
+            {
+                "name":"Fernando da Silva Costa",
+                "gender":"Male",
+                "birthdate":"1979-05-27"
+            },
+            {
+                "name":"Lídia Martins de Almeida Costa",
+                "gender":"Female",
+                "birthdate":"1980-12-14"
+            },
+            {
+                "name":"Fernando da Silva Costa Júnior",
+                "gender":"Male",
+                "birthdate":"2006-01-13"
+            },
+            {
+                "name":"Eduardo de Almeida Costa",
+                "gender":"Male",
+                "birthdate":"2011-10-10"
+            }
+        ]
+    }
+}

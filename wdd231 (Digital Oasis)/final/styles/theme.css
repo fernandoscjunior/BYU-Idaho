@@ -1,0 +1,77 @@
+/* ----- Themes -----*/
+
+body.light {
+  background-color: #FFFFFF;
+}
+
+body.dark {
+  background-color: var(--text-color);
+}
+
+/* Dark mode header*/
+
+body.dark .hamburger {
+    color: var(--background-color);
+}
+
+body.dark header span{
+  color: var(--background-color);
+}
+
+/* Dark mode main */
+
+body.dark main h1{
+    color: var(--background-color);
+}
+
+body.dark main button:hover {
+    background-color: var(--secondary-color);
+    color: var(--background-color);
+}
+
+body.dark main section p{
+    color: var(--background-color);
+}
+
+body.dark main .cards section {
+    background-color: var(--secondary-color);
+}
+
+body.dark main .cards section p {
+    color: var(--background-color);
+}
+
+body.dark main .cards h2 {
+    color: var(--background-color);
+}
+
+/* Dark mode form */
+
+body.dark form {
+    background: var(--primary-color);
+}
+
+body.dark form label{
+    color: var(--text-color);
+}
+
+body.dark form p{
+    color: var(--text-color);
+}
+
+
+/* Dark mode footer*/
+
+body.dark footer {
+    background-color: var(--secondary-color);
+}
+
+/* Transition Animation */
+
+body {
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+main section .cards section {
+    transition: background-color 0.4s ease, color 0.4s ease;
+}

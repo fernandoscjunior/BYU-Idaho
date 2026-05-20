@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Terere main page for WDD131 course Dynamic Web Fundamentals, done by Fernando Costa Jr">
+    <meta name="author" content="Fernando da Silva Costa Júnior">
+    <title>Terere and Health</title>
+    <link rel="stylesheet" href="styles/mate.css">
+    <link rel="stylesheet" href="styles/mate-mobile.css">
+    <script defer src="scripts/form.js"></script>
+</head>
+<body>
+    <header>
+        <div>
+        <a href="index.html"><img src="images/terere-logo.png" alt="Terere Logo"></a>
+        </div>
+        <div class="nav">
+        <nav>
+            <a href="index.html">Home Page</a>
+            <a href="history.html">Terere Story</a>
+            <a href="make-terere.html">Make Terere</a>
+            <a href="health.html">Terere & Health</a>
+        </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="card-one">
+        <div class="titleDiv">
+            <h1>Pros and Cons of drinking Terere:</h1>
+        </div>
+        <h2>Pros of Drinking Terere</h2>
+        <p>
+            Hydration: Since it's prepared with cold water, it helps keep the body hydrated, especially in hot climates.
+            Rich in Antioxidants: Yerba mate contains antioxidants that combat free radicals, potentially reducing the risk of chronic diseases.<br><br>
+            Boosts Energy: The caffeine in Tererê provides a natural energy boost, improving focus and reducing fatigue.
+            Aids Digestion: Many people find that Tererê helps with digestion, particularly after heavy meals.<br><br>
+            Diuretic Effect: It promotes the elimination of excess fluids and toxins, which can be beneficial for those prone to water retention.<br><br>
+            Contains Essential Nutrients: Yerba mate is rich in vitamins and minerals like vitamin C, iron, potassium, and phosphorus.
+        </p>
+        <h2>Cons of Drinking Terere</h2>
+        <p>
+            Excessive Caffeine Intake: Overconsumption can lead to insomnia, nervousness, increased blood pressure, and heart palpitations. <br><br>
+            Potential Dental Issues: Frequent exposure to yerba mate may contribute to enamel erosion and staining of teeth. <br><br>
+            Possible Health Risks: Some studies suggest that excessive consumption of Tererê may be linked to certain cancers due to the presence of benzopyrene, a compound also found in cigarette smoke.<br><br>
+            Not Recommended for Certain Conditions: People with kidney stones, bladder issues, or high blood pressure should moderate their intake due to its diuretic and stimulant effects.
+        </p>
+        </section>
+
+        <div class="form">
+            <h1>Did you like learning about Terere?</h1>
+            <form id="myForm">
+                <input type="radio" id="yes" name="response" value="yes">
+                <label for="yes">Yes</label> 
+                
+                <input type="radio" id="no" name="response" value="no">
+                <label for="no">No</label> <br>
+
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required> <br>
+            
+                <label for="comment">Comments:</label> <br>
+                <textarea id="comment" name="comment" rows="3"></textarea> <br>
+            
+              <button type="submit">Send my review</button>
+            </form>
+             <div id="submissionsDisplay"></div>
+        </div>
+    </main>
+    <footer>
+        <p>©️ Tererê Museum. 2025 All rights reserved </p>
+        <a href="references.html">references</a>
+    </footer>
+</body>
+</html>

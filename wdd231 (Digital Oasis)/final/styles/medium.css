@@ -1,0 +1,59 @@
+@media only screen and (min-width: 641px) {
+    /*adjusting header body and footer to big-size screen*/
+    header, main {
+        max-width: 650px;
+        margin: 0 auto;
+    }
+    header {
+        grid-template-columns: 1fr 1.5fr 0.5fr;
+        text-align: start;
+        border: none;
+    }
+
+    header span {
+        font-size: 33px;
+    }
+    /*making hamburger small-display only*/
+    .hamburger {
+        display: none;
+    }
+
+    /* Making nav bar default on large screen*/
+    .navigation {
+        display: block;
+    }
+
+    .navigation a {
+        border: none;
+    }
+
+    main .purpose p {
+        font-size: 22px;
+    }
+
+    main .call-action {
+        border-radius: 10px;
+    }
+
+    /* Adjusting cards section in Posts page*/
+    main section .cards section{
+        background-color: var(--background-color);
+        border-radius: 10px;
+        max-width: 700px;
+        height: auto;
+    }
+    
+    main section .cards h2 {
+        color: var(--text-color);
+    }
+
+    main section .cards p {
+        color: var(--text-color);
+        font-size: large;
+    }
+    
+    main section .cards img {
+        width: 400px;
+        height: 100%;
+    }
+}

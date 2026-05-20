@@ -1,0 +1,27 @@
+@media (max-width: 40em) {
+    header {
+        display: flex;
+        flex-flow: column;
+    }
+
+    main {
+        display: flex;
+        flex-flow: column;
+    }
+
+    .card-two img {
+        width: 350px;
+        height: auto;
+    }
+
+    /*History page Mobile CSS*/
+    .history-main {
+        display: flex;
+        flex-flow: column;
+    }
+
+    .history-main img {
+        width: 360px;
+        height: auto;
+    }
+}

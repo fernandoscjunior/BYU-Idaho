@@ -1,0 +1,13 @@
+@media (min-width: 768px) {
+  body {
+    padding: 40px;
+  }
+  
+  form {
+    padding: 30px;
+  }
+  
+  .rating label {
+    font-size: 34px;
+  }
+}

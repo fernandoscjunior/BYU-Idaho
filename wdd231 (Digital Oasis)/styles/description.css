@@ -1,0 +1,60 @@
+* {
+    margin: none;
+    padding: none;
+    box-sizing: border-box;
+}
+
+.mint {
+    color: #E8F0E8;
+    background-color: black;
+}
+
+.honey {
+    color: #DFF5E1;
+    background-color: black;
+}
+
+.celadon {
+    color: #B7D3B2;
+    background-color: black;
+}
+
+.dark-celadon {
+    color: #A3C9A8;
+    background-color: black;
+}
+
+.aspargus {
+    color: #7FAF7C;
+    background-color: black;
+}
+
+p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+h1 {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+button {
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    padding: 25px;
+    font-size: large;
+}
+
+a {
+    color: black;
+    font-family: "Poppins", sans-serif;
+}
+
+main {
+    text-align: center;
+}

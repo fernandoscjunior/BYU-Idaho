@@ -1,0 +1,46 @@
+@media only screen and (min-width: 1025px) {
+    /*adjusting header body and footer to big-size screen*/
+    header, main, nav, footer {
+        margin: 0 auto;
+    }
+    /*adjusting header items for large viewers*/
+    header {
+        grid-template-columns: 100px 1fr;
+        text-align: start;
+    }
+
+    /*Adjusting card's grid to 3 columns*/
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .cards section {
+        grid-template-areas: 
+        "photograph name"
+        "photograph description"
+        "photograph location"
+        "photograph button";
+    }
+
+    .cards section img:hover {
+        filter: blur(1px);
+    }
+
+    /*making hamburger small-display only*/
+    .hamburger {
+        display: none;
+    }
+
+    /* Making nav bar default on large screen*/
+    .navigation {
+        display: block;
+    }
+
+    .navigation a {
+        border: none;
+    }
+    
+}

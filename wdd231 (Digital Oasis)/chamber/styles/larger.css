@@ -1,0 +1,122 @@
+@media only screen and (min-width: 51rem) {
+    /*adjusting header body and footer to big-size screen*/
+    header, main, nav, footer {
+        margin: 0 auto;
+    }
+    /*adjusting header items for large viewers*/
+    header {
+        grid-template-columns: 100px 1fr;
+        text-align: start;
+    }
+
+    /*Adjusting card's grid to 3 columns*/
+    .cards {
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 0px;
+        margin: 0px;
+    
+    }
+    
+    /*Adjusting list view to large screens*/
+
+    .list {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .list section {
+		display: grid;
+		grid-template-columns: 2fr 1fr 1fr;
+		margin: 0;
+		padding: 10px;
+        border-radius: 0%;
+        border: none;
+        text-align: left;
+        
+    }
+	.list section:nth-child(even) {
+			background-color: var(--text-color);
+		}
+
+    .list section:first-child {
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+
+    .list section:last-child {
+            border-bottom-right-radius: 5px;
+            border-bottom-left-radius: 5px;
+        }
+
+    /*making hamburger small-display only*/
+    .hamburger {
+        display: none;
+    }
+
+    /* Making nav bar default on large screen*/
+    .navigation {
+        display: block;
+    }
+
+    .navigation a {
+        border: none;
+    }
+
+    /*Making main section grid when big screen*/
+    main .sections{
+        display: grid;
+        padding: 5px;
+    }
+
+    main .hero-img {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    main .hero-img img {
+        width: 81%;
+        height: auto;
+        margin: 5px;
+        border-radius: 10px;
+    }
+
+    main .call-action {
+        width: 71%;
+        border-radius: 10px;
+    }
+
+    main .events {
+        display: grid;
+        gap: 5px;
+       width: 71%;
+    }
+
+    main .events img {
+        width: 250px;
+        height: auto;
+        border-radius: 20px;
+    }
+
+    main .events .new {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    main .weather {
+        width: 71%;
+
+    }
+
+    main .weather div {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    main .weather .forecast {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    
+}

@@ -1,0 +1,54 @@
+/* Elder Costa | WDD 130*/
+:root {
+    --color: black;
+}
+
+
+
+main {
+    max-width: 840px;
+}
+
+aside {
+    width: 400px;
+    margin: 5px;
+    border: 1px;
+    padding: 5px;
+    background-color: green;
+    color: aliceblue;
+}
+
+aside img {
+    width: 200px;
+    height: auto;
+}
+
+main img {
+    width: 150px;
+    height: auto;
+}
+
+p {
+    padding: 0;
+}
+
+footer {
+    margin-top: 10px;
+    border-top: 2px;
+    text-align: center;
+}
+
+nav { 
+    color: var(--color);
+    border: 1px;
+}
+
+nav a {
+    color: var(--color);
+    margin: 3px;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: chartreuse;
+}

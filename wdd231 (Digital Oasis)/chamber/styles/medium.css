@@ -1,0 +1,19 @@
+@media only screen and (min-width: 641px) {
+    .cards section {
+        grid-template-areas: 
+        "photograph name"
+        "photograph description"
+        "photograph location"
+        "photograph button";
+
+    }
+
+    .cards section img {
+        width: 400px;
+        height: 300px;
+    }
+
+    .cards section img:hover {
+        filter: blur(0.8px);
+    }
+}

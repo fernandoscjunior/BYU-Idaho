@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Make your own Terere page for WDD131 course Dynamic Web Fundamentals, done by Fernando Costa Jr">
+    <meta name="author" content="Fernando da Silva Costa Júnior">
+    <title>Make your own Terere</title>
+    <link rel="stylesheet" href="styles/make-mate.css">
+    <link rel="stylesheet" href="styles/make-mate-mobile.css">
+    <script defer src="scripts/make-mate.js"></script>
+</head>
+<body>
+  <header>
+        <div>
+        <a href="index.html"><img src="images/terere-logo.png" alt="Terere Logo"></a>
+        </div>
+        <div class="nav">
+        <nav>
+            <a href="index.html">Home Page</a>
+            <a href="history.html">Terere Story</a>
+            <a href="make-terere.html">Make Terere</a>
+            <a href="health.html">Terere & Health</a>
+        </nav>
+        </div>
+    </header>
+
+  <main>
+    <h1>How to prepare Terere</h1>
+    <div class="instructions">
+      <p>Follow these steps to prepare a delicious and fresh Terere:</p>
+      <ol>
+        <li>Grab a tall <strong>cup</strong>.</li>
+        <li>Add the <strong>mate</strong>.</li>
+        <li>Add the <strong>Juice</strong>.</li>
+        <li>And finally put the <strong>"bomba"</strong>.</li>
+      </ol>
+      <p>drag and drop every item to the "box" below in the correct order.</p>
+    </div>
+
+    <div class="draggable-container">
+      <img src="images/cup.svg" alt="cup" id="copo" class="item" draggable="true" loading="lazy">
+      <img src="images/leaves.svg" alt="mate" id="erva" class="item" draggable="true" loading="lazy">
+      <img src="images/juice.svg" alt="juice" id="suco" class="item" draggable="true" loading="lazy">
+      <img src="images/bomba.png" alt="Bomba" id="bomba" class="item" draggable="true" loading="lazy">
+    </div>
+
+    <div class="drop-zone" id="dropZone">
+      <p>Drop the itens here:</p>
+    </div>
+
+    <div class="congrats hidden" id="congratsMessage">
+      Congratulations! You prepared a perfect Terere!
+    </div>
+  </main>
+
+  <footer>
+      <p>©️ Tererê Museum. 2025 All rights reserved </p>
+      <a href="references.html">references</a>
+  </footer>
+ </body>
+</html>

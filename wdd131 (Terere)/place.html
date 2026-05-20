@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Place website portraiting a place that I want to go or already visited for the WDD131 course Dynamic Web Fundamentals, done by Fernando Costa Jr">
+    <meta name="author" content="Fernando da Silva Costa Júnior">
+    <title>WDD 131 - Dynamic Web Fundamentals - Place</title>
+    <link rel="stylesheet" href="styles/place-larger.css">
+    <link rel="stylesheet" href="styles/place.css">
+    <script defer src="scripts/place.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div>
+            <h1>Italy </h1>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section class="main-content">
+            <picture>
+                <source srcset="images/italy-mobile.webp" media="(max-width: 600px)">
+                <img src="images/italy-dekstop.webp" alt="Beautiful view of Italy">
+            </picture>
+
+            <div class="weather-icon">
+                    <img src="images/sun_icon.svg" alt="Weather icon">
+                </div>
+
+            <section class="place-info">
+                <h1>Data</h1>
+                <p>Area: 301.340 sqr KM<br>
+                    Population: 60.36 million<br>
+                    Capital: Rome<br>
+                    Currency: Euro (€)<br>
+                    Language: Italian<br>
+                    Time Zone: Central European Time (CET)<br>
+                    Calling Code: +39<br>
+                    internet TLD: .it<br>
+                </p>
+            </section>
+
+            <section class="weather-info">
+                <h1>Weather</h1>
+
+                <section id="weather">
+                    <p id="windChill">Wind Chill: </p>
+                </section>
+
+            </section>
+        </section>
+        
+    </main>
+
+    <footer>
+        <p>©️ <span id="currentyear"></span> Fernando Costa Jr Brazil</p>
+        <p id="lastmodified"><span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,212 @@
+:root {
+    --primary-color:#F5F5F5 ;
+    --secondary-color:#035454;
+    --background-color:#333333;
+    --text-color: #003366;
+    --color: #fff700;
+    --font-title: "Montserrat", sans-serif;
+    --font-text: "DM Sans", sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* ------ Header Content ------*/
+header {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    background-color: var(--text-color);
+    text-align: center;
+}
+
+header img {
+    width: 100px;
+    height: auto;
+
+}
+
+header h1 {
+    font-family: var(--font-title);
+    color: var(--primary-color);
+    align-self: center;
+}
+
+/* ------ Hamburger Menu -----*/
+.hamburger {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+.hamburger::before{
+    content: "\2630";
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+}
+
+
+/* ----- Nav Content -----*/
+
+.navigation {
+    display: none;
+    background-color: var(--secondary-color);
+    padding: 10px;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-evenly;
+    
+}
+
+.navigation a {
+    display: block;
+    text-decoration: none;
+    color: var(--primary-color);
+    font-family: var(--font-text);
+    padding: 10px;
+
+}
+
+.navigation a:hover{
+    background-color: var(--text-color);
+    border-radius: 5px;
+}
+
+.navigation a.active {
+  border-bottom: 3px solid var(--text-color);
+  font-weight: bold;
+}
+
+/* ------ Main Section Content ------*/
+
+main p {
+    font-family: var(--font-text);
+    color: var(--color);
+}
+
+main button {
+    font-size: medium;
+    padding: 10px;
+    margin: 10px;
+    background-color: var(--text-color);
+    color: var(--primary-color);
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+main button:hover {
+    background-color: var(--color);
+}
+
+main div section {
+    margin: 10px;
+}
+/* ------ Cards section ------*/
+
+.cards section {
+    border-radius: 10px;
+    padding: 10px;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    text-align: center;
+    display: grid;
+    grid-template-areas: 
+    "name"
+    "photograph"
+    "description"
+    "location"
+    "button";
+    
+}
+
+.cards section button {
+    grid-area: button;
+
+}
+
+.cards section h2 {
+    color: var(--primary-color);
+    font-family: var(--font-title);
+    grid-area: name;
+    padding: 5px;
+}
+
+.cards section p {
+    padding: 5px;
+    color: var(--primary-color);
+    grid-area: description;
+}
+
+.cards section address {
+    color: var(--primary-color);
+    font-family: var(--font-text);
+    grid-area: location;
+    padding: 5px;
+}
+
+.cards section img {
+    padding: 5px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    grid-area: photograph;
+}
+
+/* ------ Footer Content ------*/
+
+footer {
+   background-color: var(--text-color);
+   padding: 1rem 10px;
+   text-align: center;
+}
+
+footer h3 {
+    color: var(--primary-color);
+    font-family: var(--font-title);
+}
+
+footer p {
+    color: var(--primary-color);
+    font-family: var(--font-text);
+    padding: 10px;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+}
+
+.social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+}
+
+.social img {
+    width: 22px;
+    height: auto;
+}
+
+.social a:hover {
+    background-color: var(--color);
+    border-radius: 5px;
+}
