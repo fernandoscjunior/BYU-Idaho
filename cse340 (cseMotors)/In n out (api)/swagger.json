@@ -1,0 +1,766 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "An In-n-Out focused API",
+    "description": "API that allows In-n-Out employees and managers programmatic access to managing their store's menu, ingredient inventory, orders, and employees",
+    "version": "1.0.0"
+  },
+  "host": "cse340-in-n-out.onrender.com",
+  "basePath": "/",
+  "schemes": [
+    "https"
+  ],
+  "paths": {
+    "/": {
+      "get": {
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/github/callback": {
+      "get": {
+        "tags": [
+          "OAuth"
+        ],
+        "description": "OAuth callback used by GitHub. On success, a session cookie is created and the user is redirected.",
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/login": {
+      "get": {
+        "tags": [
+          "OAuth"
+        ],
+        "description": "Redirects the user to GitHub to authenticate.",
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/logout": {
+      "get": {
+        "tags": [
+          "OAuth"
+        ],
+        "description": "Destroys the current session and logs the user out.",
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/employees/": {
+      "get": {
+        "tags": [
+          "Employees"
+        ],
+        "description": "Returns a list of employees.",
+        "responses": {
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Employees"
+        ],
+        "description": "Creates a new employee record.",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "oauthId": {
+                  "type": "string",
+                  "example": "43051103"
+                },
+                "firstName": {
+                  "type": "string",
+                  "example": "Zach"
+                },
+                "lastName": {
+                  "type": "string",
+                  "example": "Barnett"
+                },
+                "hireDate": {
+                  "type": "string",
+                  "example": "2020-03-01T00:00:00.000+00:00"
+                },
+                "hourlyPay": {
+                  "type": "number",
+                  "example": 17.5
+                },
+                "role": {
+                  "type": "string",
+                  "example": "manager"
+                },
+                "address": {
+                  "type": "string",
+                  "example": "123 Spooner St, Springville, IL 12345"
+                }
+              },
+              "required": [
+                "firstName",
+                "lastName",
+                "hireDate",
+                "hourlyPay",
+                "address"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        }
+      }
+    },
+    "/employees/{id}": {
+      "get": {
+        "tags": [
+          "Employees"
+        ],
+        "description": "Returns a single employee by MongoDB ObjectId.",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Employees"
+        ],
+        "description": "Updates an employee by id.",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "oauthId": {
+                  "type": "string",
+                  "example": "0"
+                },
+                "firstName": {
+                  "type": "string",
+                  "example": "Zach"
+                },
+                "lastName": {
+                  "type": "string",
+                  "example": "Barnett"
+                },
+                "hireDate": {
+                  "type": "string",
+                  "example": "2020-03-01T00:00:00.000+00:00"
+                },
+                "hourlyPay": {
+                  "type": "number",
+                  "example": 17.5
+                },
+                "role": {
+                  "type": "string",
+                  "example": "manager"
+                },
+                "address": {
+                  "type": "string",
+                  "example": "123 Spooner St, Springville, IL 12345"
+                }
+              },
+              "required": [
+                "firstName",
+                "lastName",
+                "hireDate",
+                "hourlyPay",
+                "address"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Employees"
+        ],
+        "description": "Deletes an employee by id.",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        }
+      }
+    },
+    "/ingredients/": {
+      "get": {
+        "tags": [
+          "Ingredients"
+        ],
+        "description": "Returns all ingredients in inventory.",
+        "responses": {
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Ingredients"
+        ],
+        "description": "Creates a new ingredient inventory record.",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string",
+                  "example": ""
+                },
+                "quantity": {
+                  "type": "number",
+                  "example": 0
+                }
+              },
+              "required": [
+                "name",
+                "quantity"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        }
+      }
+    },
+    "/ingredients/{id}": {
+      "get": {
+        "tags": [
+          "Ingredients"
+        ],
+        "description": "Returns a single ingredient by MongoDB ObjectId.",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Ingredients"
+        ],
+        "description": "Updates an ingredient by id.",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string",
+                  "example": ""
+                },
+                "quantity": {
+                  "type": "number",
+                  "example": 0
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Ingredients"
+        ],
+        "description": "Deletes an ingredient by id.",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        }
+      }
+    },
+    "/orders/": {
+      "get": {
+        "tags": [
+          "Orders"
+        ],
+        "description": "Returns all orders placed in the system.",
+        "responses": {
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Orders"
+        ],
+        "description": "Creates a new order.",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "customerName": {
+                  "type": "string",
+                  "example": "guest"
+                },
+                "subTotal": {
+                  "type": "number",
+                  "example": 0
+                },
+                "tax": {
+                  "type": "number",
+                  "example": 0
+                },
+                "total": {
+                  "type": "number",
+                  "example": 0
+                },
+                "items": {
+                  "type": "array",
+                  "example": [],
+                  "items": {}
+                },
+                "customizations": {
+                  "type": "object",
+                  "properties": {}
+                }
+              },
+              "required": [
+                "customerName",
+                "subTotal",
+                "tax",
+                "total",
+                "items",
+                "customizations"
+              ]
+            },
+            "$timestamp": "2020-03-01T00:00:00.000+00:00"
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        }
+      }
+    },
+    "/orders/{id}": {
+      "get": {
+        "tags": [
+          "Orders"
+        ],
+        "description": "Returns a single order by MongoDB ObjectId.",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Orders"
+        ],
+        "description": "Updates an order by id.",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "customerName": {
+                  "type": "string",
+                  "example": "guest"
+                },
+                "subTotal": {
+                  "type": "number",
+                  "example": 0
+                },
+                "tax": {
+                  "type": "number",
+                  "example": 0
+                },
+                "total": {
+                  "type": "number",
+                  "example": 0
+                },
+                "items": {
+                  "type": "array",
+                  "example": [],
+                  "items": {}
+                },
+                "customizations": {
+                  "type": "object",
+                  "properties": {}
+                },
+                "timestamp": {
+                  "type": "string",
+                  "example": "2020-03-01T00:00:00.000+00:00"
+                }
+              },
+              "required": [
+                "customerName",
+                "subTotal",
+                "tax",
+                "total",
+                "items",
+                "customizations",
+                "timestamp"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Orders"
+        ],
+        "description": "Deletes an order by id.",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        }
+      }
+    },
+    "/menu_items/": {
+      "get": {
+        "tags": [
+          "Menu_items"
+        ],
+        "description": "Returns all menu items.",
+        "responses": {
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Menu_items"
+        ],
+        "description": "Creates a new menu item.",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string",
+                  "example": "Cheeseburger"
+                },
+                "price": {
+                  "type": "number",
+                  "example": 10
+                },
+                "ingredients": {
+                  "type": "array",
+                  "example": [
+                    "698572fc78981de026571e8d",
+                    "6985739378981de026571e96"
+                  ],
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              },
+              "required": [
+                "name",
+                "price"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        }
+      }
+    },
+    "/menu_items/{id}": {
+      "get": {
+        "tags": [
+          "Menu_items"
+        ],
+        "description": "Returns a single menu item by MongoDB ObjectId.",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Menu_items"
+        ],
+        "description": "Updates a menu item by id.",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string",
+                  "example": "Cheeseburger"
+                },
+                "price": {
+                  "type": "number",
+                  "example": 10
+                },
+                "ingredients": {
+                  "type": "array",
+                  "example": [
+                    "698572fc78981de026571e8d",
+                    "6985739378981de026571e96"
+                  ],
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              },
+              "required": [
+                "name",
+                "price"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Menu_items"
+        ],
+        "description": "Delete a menu item",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        }
+      }
+    }
+  }
+}

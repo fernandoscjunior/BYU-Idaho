@@ -1,0 +1,39 @@
+{
+  "name": "cse341",
+  "version": "1.0.0",
+  "description": "api for cse341 course's first 4 weeks",
+  "homepage": "https://github.com/fernandoscjunior/cse341-p1#readme",
+  "bugs": {
+    "url": "https://github.com/fernandoscjunior/cse341-p1/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fernandoscjunior/cse341-p1.git"
+  },
+  "license": "ISC",
+  "author": "Fernando S. Costa Jr",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "swagger": "node ./swagger.js"
+  },
+  "dependencies": {
+    "body-parser": "^2.2.2",
+    "dotenv": "^17.2.3",
+    "eslint-config-node": "^4.1.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^5.5.5",
+    "express": "^5.2.1",
+    "mongodb": "^7.0.0",
+    "prettier": "^3.8.0",
+    "swagger-autogen": "^2.23.7",
+    "swagger-ui-express": "^5.0.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.2",
+    "eslint": "^9.39.2",
+    "globals": "^17.0.0"
+  }
+}
