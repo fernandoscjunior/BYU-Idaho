@@ -1,0 +1,4 @@
+0
+Simplegoal:Eat pizza:(Eat an entire pizza without spending a cent):100:False
+Eternalgoal:Be happy:(Don't be sad):10
+Checklistgoal:Bond, James Bond:(Being a secret agent):30:300:5:0

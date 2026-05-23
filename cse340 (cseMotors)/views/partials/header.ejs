@@ -1,0 +1,14 @@
+<header id="top-header">
+  <span class="siteName">
+    <a href="/" title="Return to home page">CSE Motors</a>
+  </span>
+  <div id="tools">
+    <% if (locals.loggedin) { %>
+      <a href="/account/cart/"><img src="../../images/site/shopping-cart.svg" alt="shopping-cart icon" width="25px" height="100%"></a>
+      <a href="/account/">Welcome! <br><u>account settings</u></a>
+      <a href="/account/logout/">Logout</a>
+    <% } else { %>
+      <a title="Click to log in" href="/account/login">My Account</a>
+    <% } %>
+  </div>
+</header>

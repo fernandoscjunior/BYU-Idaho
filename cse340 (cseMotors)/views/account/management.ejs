@@ -1,0 +1,23 @@
+<% if (title) { %>
+    <h1><%= title %></h1>
+<% } else {
+    res.redirect('/')
+    } %>
+
+<%- messages() %>
+
+<% if (errors) { %>
+  <ul class="notice">
+ <% errors.array().forEach(error => { %>
+   <li><%= error.msg %></li>
+<%  }) %>
+ </ul>
+<% } %>
+
+<h2>Welcome <%- locals.username %></h2>
+<a href="/account/update/<%- locals.id %>">Update account information</a>
+
+<% if (locals.userType == 1 || locals.userType == 2) { %>
+  <h3>Inventory management</h3>
+  <a href="/inv/"><u>Access management page</u></a>
+<% } %>

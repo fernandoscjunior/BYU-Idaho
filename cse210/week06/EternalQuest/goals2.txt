@@ -1,0 +1,4 @@
+100
+Simplegoal:Hug my father:((((Make him happy by hugging him)))):10:True
+Eternalgoal:Read the scriptures:((((Read it at least for 10 min everyday)))):30
+Checklistgoal:Put the trash outside:Pick the stink trash and put it outside of home in the garbage collector:50:100:3:0
