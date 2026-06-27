@@ -1,5 +1,5 @@
 # BYU-Idaho
-*Bachelor's degree journey*
+*Associate's degree journey*
 
 ## This repo contains the projects and assignments from the courses below:
 
