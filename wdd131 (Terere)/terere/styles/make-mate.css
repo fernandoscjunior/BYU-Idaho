@@ -128,7 +128,7 @@ ol {
 footer {
     background-image: linear-gradient(to right, var(--border-color), var(--primary-color));
     text-align: center;
-    padding: 20px;
+    padding: 25px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     margin-top: 65px;
