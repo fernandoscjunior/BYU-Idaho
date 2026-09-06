@@ -1,7 +1,7 @@
 # BYU-Idaho
 *Associate's degree journey*  
 *From June 2024 to Jul 2026*  
-(It doesn't show in my commit history because I deleted the orginal repos and put them back here)
+(It doesn't show in my commit history because I deleted the original repos and put them here)
 
 ## This repo contains the projects and assignments from the courses below:
 
