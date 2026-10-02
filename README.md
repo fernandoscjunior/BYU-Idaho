@@ -11,7 +11,7 @@ WDD231 - Web Front-End Development I
 WDD330 - Web Front-End Development II  
 WDD430 - Web Fullstack Development  
 CSE110 - Introduction to Programming  
-CSE111 - Programming with Functions
+CSE111 - Programming with Functions  
 CSE210 - Programming with Classes  
 CSE212 - Data Structures  
 CSE310 - Applied Programming  
