@@ -11,6 +11,8 @@ WDD231 - Web Front-End Development I
 WDD330 - Web Front-End Development II  
 WDD430 - Web Fullstack Development  
 CSE210 - Programming with Classes  
+CSE212 - Data Structures  
+CSE310 - Applied Programming  
 CSE340 - Web Back-End Development  
 CSE341 - Web Services  
 
