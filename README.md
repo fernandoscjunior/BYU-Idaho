@@ -14,6 +14,7 @@ CSE110 - Introduction to Programming
 CSE111 - Programming with Functions  
 CSE210 - Programming with Classes  
 CSE212 - Data Structures  
+CSE270 - Software Testing  
 CSE310 - Applied Programming  
 CSE340 - Web Back-End Development  
 CSE341 - Web Services  
